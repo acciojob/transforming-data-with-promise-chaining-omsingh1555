@@ -1,5 +1,4 @@
-
- //your JS code here. If required.
+//your JS code here. If required.
 document.getElementById('btn').addEventListener('click', function () {
   const input = document.getElementById('ip').value;
   const outputDiv = document.getElementById('output');
@@ -11,7 +10,7 @@ document.getElementById('btn').addEventListener('click', function () {
   // First Promise: resolves with input number after 2s
   new Promise((resolve) => {
     setTimeout(() => {
-      outputDiv.textContent = ⁠ Result: ${num} ⁠;
+      outputDiv.textContent = `Result: ${num}`;
       resolve(num);
     }, 2000);
   })
@@ -20,7 +19,7 @@ document.getElementById('btn').addEventListener('click', function () {
       return new Promise((resolve) => {
         setTimeout(() => {
           const multiplied = result1 * 2;
-          outputDiv.textContent = ⁠ Result: ${multiplied} ⁠;
+          outputDiv.textContent = `Result: ${multiplied}`;
           resolve(multiplied);
         }, 2000);
       });
@@ -30,7 +29,7 @@ document.getElementById('btn').addEventListener('click', function () {
       return new Promise((resolve) => {
         setTimeout(() => {
           const subtracted = result2 - 3;
-          outputDiv.textContent = ⁠ Result: ${subtracted} ⁠;
+          outputDiv.textContent = `Result: ${subtracted}`;
           resolve(subtracted);
         }, 1000);
       });
@@ -40,7 +39,7 @@ document.getElementById('btn').addEventListener('click', function () {
       return new Promise((resolve) => {
         setTimeout(() => {
           const divided = result3 / 2;
-          outputDiv.textContent = ⁠ Result: ${divided} ⁠;
+          outputDiv.textContent = `Result: ${divided}`;
           resolve(divided);
         }, 1000);
       });
@@ -50,7 +49,7 @@ document.getElementById('btn').addEventListener('click', function () {
       return new Promise((resolve) => {
         setTimeout(() => {
           const finalResult = result4 + 10;
-          outputDiv.textContent = ⁠ Final Result: ${finalResult} ⁠;
+          outputDiv.textContent = `Final Result: ${finalResult}`;
         }, 1000);
       });
     })
